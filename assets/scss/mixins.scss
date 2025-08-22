@@ -1,0 +1,45 @@
+@use 'sass:color';
+@use 'variables' as *;
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin card {
+  background: $white;
+  border-radius: $border-radius;
+  box-shadow: $shadow-sm;
+  padding: $spacing-lg;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: $shadow-md;
+  }
+}
+
+@mixin button-reset {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+@mixin truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin multi-line-truncate($lines) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

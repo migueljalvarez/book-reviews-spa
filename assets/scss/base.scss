@@ -1,0 +1,62 @@
+@use 'variables' as *;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: $text-primary;
+  background-color: $background;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+.page {
+  padding: $spacing-xl 0;
+  min-height: calc(100vh - 80px);
+}
+
+// Utilidades
+.text-center {
+  text-align: center;
+}
+
+.mb-sm {
+  margin-bottom: $spacing-sm;
+}
+
+.mb-md {
+  margin-bottom: $spacing-md;
+}
+
+.mb-lg {
+  margin-bottom: $spacing-lg;
+}
+
+.mb-xl {
+  margin-bottom: $spacing-xl;
+}
+
+.mt-sm {
+  margin-top: $spacing-sm;
+}
+
+.mt-md {
+  margin-top: $spacing-md;
+}
+
+.mt-lg {
+  margin-top: $spacing-lg;
+}
+
+.mt-xl {
+  margin-top: $spacing-xl;
+}

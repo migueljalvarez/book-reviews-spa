@@ -1,0 +1,35 @@
+{
+  "name": "book-reviews-spa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "start": "node .output/server/index.mjs",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint  .",
+    "lint:fix": "eslint  --fix",
+    "format": "prettier --write \"**/*.{js,ts,vue,json,css,scss,md}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/migueljalvarez/book-reviews-spa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/migueljalvarez/book-reviews-spa/issues"
+  },
+  "homepage": "https://github.com/migueljalvarez/book-reviews-spa#readme",
+  "dependencies": {
+    "@pinia/nuxt": "^0.11.2",
+    "nuxt": "^3.17.7",
+    "sass": "^1.90.0",
+    "vue": "^3.5.19"
+  }
+}
